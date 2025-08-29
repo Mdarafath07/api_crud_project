@@ -16,7 +16,7 @@ class ProductHomePage extends StatefulWidget {
 
 class _ProductHomePageState extends State<ProductHomePage> {
   final List<ProductModel> _productList = [];
-  bool _getProductInProgress = false;
+   bool _getProductInProgress = false;
 
   @override
   void initState() {
@@ -95,7 +95,7 @@ class _ProductHomePageState extends State<ProductHomePage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Wallcome Back,",style: TextStyle(
+                              Text("Welcome Back,",style: TextStyle(
                                 fontWeight: FontWeight.w900,
                                 fontSize: 14,
                                 color: Colors.white,
@@ -146,7 +146,9 @@ class _ProductHomePageState extends State<ProductHomePage> {
               child: ListView.builder(
                 itemCount: _productList.length,
                 itemBuilder: (context, index){
-                  return product_item(product: _productList[index],);
+                  return product_item(product: _productList[index], refreshProductList: () {
+                    _getProductList();
+                  },);
 
                 },
               ),
