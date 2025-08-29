@@ -238,7 +238,9 @@ class _AddNewProductState extends State<AddNewProduct> {
                       replacement: Center(
                         child: CircularProgressIndicator(),
                       ),
-                      child: ElevatedButton(onPressed: _onTapAddProductButton, child: Text("Submit",style: TextStyle(
+                      child: ElevatedButton(onPressed:
+                      _onTapAddProductButton,
+                          child: Text("Submit",style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                       ),),

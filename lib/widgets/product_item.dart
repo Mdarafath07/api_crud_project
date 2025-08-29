@@ -91,7 +91,9 @@ class _product_itemState extends State<product_item> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => UpdateProductScreen(),
+                      builder: (context) => UpdateProductScreen(
+                        product: widget.product, refreshProductList: widget.refreshProductList,
+                      ),
                     ),
                   );
                 }
@@ -124,6 +126,11 @@ class _product_itemState extends State<product_item> {
     });
 
   }
+
+
+
+
+
 }
 
 enum ProductOptions { update, delete }

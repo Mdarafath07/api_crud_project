@@ -113,7 +113,7 @@ class _ProductHomePageState extends State<ProductHomePage> {
                     ),
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xff091B6A),
+                            backgroundColor: Colors.white.withOpacity(0.2),
                             shape:RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)
                             )

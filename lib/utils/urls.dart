@@ -4,4 +4,7 @@ class Urls {
   static  String deleteProductUrl(String id ) {
     return "$_baseUrl/DeleteProduct/$id";
   }
+  static String updateProductUrl(String id) {
+    return "$_baseUrl/UpdateProduct/$id";
+  }
 }
